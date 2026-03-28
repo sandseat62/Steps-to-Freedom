@@ -17,6 +17,7 @@
 
         /* Grace Community Church Branding Colors */
         .bg-grace-navy { background-color: #0f172a; }
+        .text-grace-navy { color: #0f172a; }
         .text-grace-blue { color: #3b82f6; }
         .bg-grace-blue { background-color: #3b82f6; }
         .border-grace-blue { border-color: #3b82f6; }
@@ -61,30 +62,33 @@
 
     <!-- Brand header -->
     <nav class="bg-grace-navy text-white sticky top-0 z-50 border-b border-white/10">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-grace-blue rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/20">
-                    <i class="fa-solid fa-cross text-white text-xl"></i>
+                <div class="w-10 h-10 bg-grace-blue rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/20 shrink-0">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
                 </div>
-                <div>
+                <div class="hidden sm:block">
                     <span class="block font-extrabold text-lg tracking-tighter leading-none uppercase">Grace Community</span>
                     <span class="block text-[10px] tracking-[0.2em] text-blue-400 uppercase font-bold">Church Detroit</span>
                 </div>
             </div>
-            <div class="hidden md:flex gap-8 text-[11px] font-black uppercase tracking-widest text-gray-400">
-                <a href="#start" class="hover:text-grace-blue transition-colors">Steps to freedom</a>
-                <a href="#workshop" class="hover:text-grace-blue transition-colors">The workshop</a>
-                <a href="#framework" class="hover:text-grace-blue transition-colors">Our framework</a>
-                <a href="#identity" class="hover:text-grace-blue transition-colors">Your identity</a>
+            
+            <div class="flex items-center gap-4 md:gap-8">
+                <div class="hidden lg:flex gap-8 text-[11px] font-black uppercase tracking-widest text-gray-400 border-r border-white/10 pr-8">
+                    <a href="#start" class="hover:text-grace-blue transition-colors">Steps to freedom</a>
+                    <a href="#workshop" class="hover:text-grace-blue transition-colors">The workshop</a>
+                    <a href="#framework" class="hover:text-grace-blue transition-colors">Our framework</a>
+                    <a href="#identity" class="hover:text-grace-blue transition-colors">Your identity</a>
+                    <a href="https://gracewired.com" target="_blank" class="hover:text-white transition-colors">Gracewired.com</a>
+                </div>
+                <a href="#contact" class="bg-grace-blue text-white px-5 py-2.5 rounded-full text-[11px] font-black uppercase tracking-widest hover:brightness-110 transition-all shadow-lg shadow-blue-500/30 whitespace-nowrap">Connect</a>
             </div>
-            <a href="#contact" class="bg-grace-blue text-white px-5 py-2.5 rounded-full text-[11px] font-black uppercase tracking-widest hover:brightness-110 transition-all shadow-lg shadow-blue-500/30">Connect now</a>
         </div>
     </nav>
 
     <!-- Hero section -->
     <header class="blueprint-hero py-24 px-6 border-b border-slate-200 text-center relative overflow-hidden">
         <div class="max-w-4xl mx-auto relative z-10">
-            <span class="bg-blue-100 text-grace-blue font-black uppercase text-[10px] tracking-[0.3em] px-4 py-1.5 rounded-full mb-8 inline-block">Church Without Curtains</span>
             <h1 class="text-5xl md:text-7xl font-black text-slate-900 mt-4 mb-8 leading-none tracking-tighter italic">
                 Freedom isn't about <br>trying harder. <br>
                 <span class="text-grace-blue underline decoration-slate-200 underline-offset-8">It's about being honest.</span>
@@ -93,9 +97,18 @@
                 In a <span class="text-slate-900 font-bold italic">"Church without curtains,"</span> we believe the primary way to break a choke-hold of addiction or shame is through **truth-telling**. These steps are a simple way to bring your hidden pain into the light.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="#framework" class="flex items-center gap-2 px-5 py-3 bg-white rounded-2xl border border-slate-200 text-[11px] font-black uppercase tracking-widest text-slate-700 shadow-sm hover:border-grace-blue transition-all"><i class="fa-solid fa-heart text-grace-blue"></i> No judgment</a>
-                <a href="#framework" class="flex items-center gap-2 px-5 py-3 bg-white rounded-2xl border border-slate-200 text-[11px] font-black uppercase tracking-widest text-slate-700 shadow-sm hover:border-grace-blue transition-all"><i class="fa-solid fa-ear-listen text-grace-blue"></i> No fixing</a>
-                <a href="#framework" class="flex items-center gap-2 px-5 py-3 bg-white rounded-2xl border border-slate-200 text-[11px] font-black uppercase tracking-widest text-slate-700 shadow-sm hover:border-grace-blue transition-all"><i class="fa-solid fa-shield-halved text-grace-blue"></i> Absolute safety</a>
+                <a href="#framework" class="flex items-center gap-2 px-5 py-3 bg-white rounded-2xl border border-slate-200 text-[11px] font-black uppercase tracking-widest text-slate-700 shadow-sm hover:border-grace-blue transition-all">
+                    <svg class="w-4 h-4 text-grace-blue" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                    No judgment
+                </a>
+                <a href="#framework" class="flex items-center gap-2 px-5 py-3 bg-white rounded-2xl border border-slate-200 text-[11px] font-black uppercase tracking-widest text-slate-700 shadow-sm hover:border-grace-blue transition-all">
+                    <svg class="w-4 h-4 text-grace-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    No fixing
+                </a>
+                <a href="#framework" class="flex items-center gap-2 px-5 py-3 bg-white rounded-2xl border border-slate-200 text-[11px] font-black uppercase tracking-widest text-slate-700 shadow-sm hover:border-grace-blue transition-all">
+                    <svg class="w-4 h-4 text-grace-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    Absolute safety
+                </a>
             </div>
         </div>
     </header>
@@ -105,30 +118,36 @@
         <div class="absolute inset-0 opacity-10 blueprint-hero pointer-events-none"></div>
         <div class="max-w-6xl mx-auto relative z-10">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-black mb-4 tracking-tighter italic">Breaking the digital choke-hold workshop</h2>
+                <h2 class="text-4xl font-black mb-4 tracking-tighter italic text-balance">Breaking the digital choke-hold workshop</h2>
                 <p class="text-blue-300 font-medium max-w-2xl mx-auto">A self-paced online course addressing the six digital addictions through the lens of a church without curtains.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div class="space-y-8">
                     <div class="flex gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-grace-blue flex items-center justify-center shrink-0 shadow-lg shadow-blue-500/20"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="w-12 h-12 rounded-xl bg-grace-blue flex items-center justify-center shrink-0 shadow-lg shadow-blue-500/20">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                        </div>
                         <div>
-                            <h4 class="font-black italic uppercase tracking-widest text-sm mb-2">Seven modules of restoration</h4>
+                            <h4 class="font-black italic uppercase tracking-widest text-sm mb-2 text-balance">Seven modules of restoration</h4>
                             <p class="text-xs text-gray-400 leading-relaxed">From identifying digital roots to renouncing the algorithmic trap, this workshop provides a step-by-step path to freedom.</p>
                         </div>
                     </div>
                     <div class="flex gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0"><i class="fa-solid fa-mobile-screen text-grace-blue"></i></div>
+                        <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                            <svg class="w-6 h-6 text-grace-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        </div>
                         <div>
-                            <h4 class="font-black italic uppercase tracking-widest text-sm mb-2">The six addictions addressed</h4>
+                            <h4 class="font-black italic uppercase tracking-widest text-sm mb-2 text-balance">The six addictions addressed</h4>
                             <p class="text-xs text-gray-400 leading-relaxed">Specific guidance for overcoming pornography, social media, online gaming, compulsive shopping, betting, and doomscrolling.</p>
                         </div>
                     </div>
                     <div class="flex gap-4">
-                        <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0"><i class="fa-solid fa-shield-halved text-grace-blue"></i></div>
+                        <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                            <svg class="w-6 h-6 text-grace-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
                         <div>
-                            <h4 class="font-black italic uppercase tracking-widest text-sm mb-2">Safe masculine and feminine paths</h4>
+                            <h4 class="font-black italic uppercase tracking-widest text-sm mb-2 text-balance">Safe masculine and feminine paths</h4>
                             <p class="text-xs text-gray-400 leading-relaxed">Gender-specific materials integrated from the Proven Ministry path for deep heartwork.</p>
                         </div>
                     </div>
@@ -136,11 +155,20 @@
                 <div class="p-10 bg-white/5 border border-white/10 rounded-[3rem] backdrop-blur-sm">
                     <h3 class="text-xl font-black italic mb-6">Ready to break free?</h3>
                     <ul class="space-y-4 mb-10">
-                        <li class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest"><i class="fa-solid fa-check text-grace-blue"></i> Identity stabilization</li>
-                        <li class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest"><i class="fa-solid fa-check text-grace-blue"></i> Algorithmic sabotage tactics</li>
-                        <li class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest"><i class="fa-solid fa-check text-grace-blue"></i> Personal rule of life guide</li>
+                        <li class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest">
+                            <svg class="w-4 h-4 text-grace-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Identity stabilization
+                        </li>
+                        <li class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest">
+                            <svg class="w-4 h-4 text-grace-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Algorithmic sabotage tactics
+                        </li>
+                        <li class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest">
+                            <svg class="w-4 h-4 text-grace-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Personal rule of life guide
+                        </li>
                     </ul>
-                    <a href="#contact" class="block text-center py-4 bg-white text-grace-navy rounded-2xl font-black uppercase tracking-widest hover:bg-grace-blue hover:text-white transition-all">Enroll in the workshop</a>
+                    <a href="#contact" class="block text-center py-4 bg-white text-grace-navy font-black uppercase tracking-widest hover:bg-grace-blue hover:text-white transition-all shadow-xl rounded-2xl">Enroll in the workshop</a>
                 </div>
             </div>
         </div>
@@ -174,6 +202,21 @@
                 <h3 class="text-xl font-black mb-4 text-slate-900 italic">Forgiveness</h3>
                 <p class="text-sm text-slate-500 leading-relaxed font-medium">Naming the people who have hurt us and releasing the debt that keeps our hearts in prison.</p>
             </div>
+            <div class="step-card p-10 bg-slate-50 border border-slate-100 rounded-[2.5rem] shadow-sm flex flex-col">
+                <div class="text-grace-blue font-black text-xs mb-4 uppercase tracking-[0.4em]">Step 04</div>
+                <h3 class="text-xl font-black mb-4 text-slate-900 italic">Rebellion</h3>
+                <p class="text-sm text-slate-500 leading-relaxed font-medium">Resigning from the position of "boss" of your own life. We ask God to take the lead in our daily decisions.</p>
+            </div>
+            <div class="step-card p-10 bg-slate-50 border border-slate-100 rounded-[2.5rem] shadow-sm flex flex-col">
+                <div class="text-grace-blue font-black text-xs mb-4 uppercase tracking-[0.4em]">Step 05</div>
+                <h3 class="text-xl font-black mb-4 text-slate-900 italic">Pride</h3>
+                <p class="text-sm text-slate-500 leading-relaxed font-medium">Dropping the pretense of "I have it all together." Vulnerability is the only path to real strength in this community.</p>
+            </div>
+            <div class="step-card p-10 bg-slate-50 border border-slate-100 rounded-[2.5rem] shadow-sm flex flex-col">
+                <div class="text-grace-blue font-black text-xs mb-4 uppercase tracking-[0.4em]">Step 06</div>
+                <h3 class="text-xl font-black mb-4 text-slate-900 italic">Bondage</h3>
+                <p class="text-sm text-slate-500 leading-relaxed font-medium">Renouncing addictive habits and bringing the "choke-hold" of shame into the light for healing.</p>
+            </div>
         </div>
     </section>
 
@@ -188,21 +231,27 @@
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-grace-blue"><i class="fa-solid fa-heart text-xs"></i></div>
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-grace-blue">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg>
+                        </div>
                         <h4 class="text-lg font-black text-slate-900 italic">No judgment</h4>
                     </div>
                     <p class="text-sm text-slate-500 leading-relaxed font-medium">We offer a space defined by gentleness and grace rather than condemnation. We believe that real change begins when you feel safe enough to be honest about your failures without fearing how others will react.</p>
                 </div>
                 <div class="space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-grace-blue"><i class="fa-solid fa-ear-listen text-xs"></i></div>
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-grace-blue">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        </div>
                         <h4 class="text-lg font-black text-slate-900 italic">No fixing</h4>
                     </div>
                     <p class="text-sm text-slate-500 leading-relaxed font-medium">Our community commits to the practice of truly sitting and listening without trying to provide a quick solution. We recognize that when you share your heart, you primarily need to be heard and known.</p>
                 </div>
                 <div class="space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-grace-blue"><i class="fa-solid fa-shield-halved text-xs"></i></div>
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-grace-blue">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
                         <h4 class="text-lg font-black text-slate-900 italic">Absolute safety</h4>
                     </div>
                     <p class="text-sm text-slate-500 leading-relaxed font-medium">Safety is built on a strict promise of confidentiality and radical transparency. We protect your story as if it were our own, ensuring that what is brought into the light stays within a secure circle.</p>
@@ -213,25 +262,54 @@
 
     <!-- Identity section -->
     <section id="identity" class="identity-gradient py-32 px-6 text-white overflow-hidden relative">
-        <div class="max-w-5xl mx-auto relative z-10">
-            <div class="text-center mb-20">
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tighter italic">Replacing the "not enough" narrative</h2>
                 <p class="text-gray-400 font-medium max-w-xl mx-auto">Shame tells you that you are worthless. Truth-telling reminds you of who you are designed to be.</p>
             </div>
 
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-                <div class="group p-6 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
-                    <i class="fa-solid fa-circle-check text-grace-blue mb-3 block text-xl"></i>
-                    <span class="text-sm font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors">I am significant</span>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Identity Cards -->
+                <div class="group p-5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                    <svg class="w-6 h-6 text-grace-blue mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="text-[11px] font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors">I am significant</span>
                 </div>
-                <div class="group p-6 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
-                    <i class="fa-solid fa-circle-check text-grace-blue mb-3 block text-xl"></i>
-                    <span class="text-sm font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors">I am secure in Him</span>
+                <div class="group p-5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                    <svg class="w-6 h-6 text-grace-blue mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="text-[11px] font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors">I am secure in Him</span>
                 </div>
-                <div class="group p-6 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
-                    <i class="fa-solid fa-circle-check text-grace-blue mb-3 block text-xl"></i>
-                    <span class="text-sm font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors text-balance">Loved without pretense</span>
+                <div class="group p-5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                    <svg class="w-6 h-6 text-grace-blue mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="text-[11px] font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors">Loved without pretense</span>
                 </div>
+                <div class="group p-5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                    <svg class="w-6 h-6 text-grace-blue mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="text-[11px] font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors">I am God's child</span>
+                </div>
+                <div class="group p-5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                    <svg class="w-6 h-6 text-grace-blue mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="text-[11px] font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors">I am Christ's friend</span>
+                </div>
+                <div class="group p-5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                    <svg class="w-6 h-6 text-grace-blue mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="text-[11px] font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors">I am a new creation</span>
+                </div>
+                <div class="group p-5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                    <svg class="w-6 h-6 text-grace-blue mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="text-[11px] font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors">I am God's workmanship</span>
+                </div>
+                <div class="group p-5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                    <svg class="w-6 h-6 text-grace-blue mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span class="text-[11px] font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors">I am salt and light</span>
+                </div>
+            </div>
+
+            <div class="mt-16 p-10 bg-white rounded-[2.5rem] text-slate-900 text-center shadow-2xl relative">
+                <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-grace-blue rounded-full flex items-center justify-center text-white shadow-xl">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.017 16H9.01705C7.91248 16 7.01705 16.8954 7.01705 18V21M14.017 21H17.017C18.1216 21 19.017 20.1046 19.017 19V10L12.017 3L5.01705 10V19C5.01705 20.1046 5.91248 21 7.01705 21H14.017Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </div>
+                <h4 class="text-xl md:text-2xl font-black mb-6 italic tracking-tight leading-tight">"I renounce the lie that I am worthless, inadequate, or hopeless. In Christ, <span class="text-grace-blue italic">I am significant</span>."</h4>
+                <p class="text-slate-400 text-[10px] font-black uppercase tracking-[0.3em]">— From the Steps to Freedom in Christ</p>
             </div>
         </div>
     </section>
@@ -247,7 +325,7 @@
             </div>
             
             <div class="bg-slate-50 p-10 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100">
-                <h3 class="text-xl font-black mb-8 text-slate-900 uppercase tracking-tight italic border-b border-slate-200 pb-4 text-center">Connect with our care team</h3>
+                <h3 class="text-xl font-black mb-8 text-slate-900 uppercase tracking-tight italic border-b border-slate-200 pb-4 text-center text-balance">Connect with our care team</h3>
                 <form action="#" method="POST" class="space-y-6">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="space-y-2">
@@ -277,13 +355,14 @@
 
                     <button type="submit" class="w-full py-5 bg-grace-blue text-white rounded-2xl font-black uppercase tracking-widest shadow-xl shadow-blue-500/20 hover:scale-[1.02] transition-all">Submit request</button>
                     <p class="text-[9px] text-center text-slate-400 font-bold uppercase tracking-widest mt-6 italic">
-                        <i class="fa-solid fa-lock mr-2 text-grace-blue"></i> All inquiries are strictly confidential.
+                        <svg class="w-3 h-3 text-grace-blue inline-block mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                        All inquiries are strictly confidential.
                     </p>
                 </form>
             </div>
 
             <div class="mt-24 pt-12 border-t border-slate-200 text-center">
-                <p class="text-[11px] text-slate-400 font-bold uppercase tracking-[0.3em]">
+                <p class="text-[11px] text-slate-400 font-bold uppercase tracking-[0.3em] text-balance">
                     Grace Community Church Detroit • A church without curtains
                 </p>
             </div>
