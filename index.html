@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedom in Christ | Grace Community Church Detroit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #ffffff;
+            color: #1e293b;
+        }
+
+        /* Grace Community Church Branding Colors */
+        .bg-grace-navy { background-color: #0f172a; }
+        .text-grace-blue { color: #3b82f6; }
+        .bg-grace-blue { background-color: #3b82f6; }
+        .border-grace-blue { border-color: #3b82f6; }
+
+        .blueprint-hero {
+            background-color: #f8fafc;
+            background-image: linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .step-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .step-card:hover { 
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .identity-gradient { 
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%); 
+        }
+
+        input, textarea, select {
+            border: 1px solid #e2e8f0;
+            padding: 0.75rem 1rem;
+            border-radius: 0.75rem;
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+    </style>
+</head>
+<body class="selection:bg-blue-100 selection:text-blue-900">
+
+    <!-- Brand header -->
+    <nav class="bg-grace-navy text-white sticky top-0 z-50 border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-grace-blue rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/20">
+                    <i class="fa-solid fa-cross text-white text-xl"></i>
+                </div>
+                <div>
+                    <span class="block font-extrabold text-lg tracking-tighter leading-none uppercase">Grace Community</span>
+                    <span class="block text-[10px] tracking-[0.2em] text-blue-400 uppercase font-bold">Church Detroit</span>
+                </div>
+            </div>
+            <div class="hidden md:flex gap-8 text-[11px] font-black uppercase tracking-widest text-gray-400">
+                <a href="#start" class="hover:text-grace-blue transition-colors">Steps to freedom</a>
+                <a href="#workshop" class="hover:text-grace-blue transition-colors">The workshop</a>
+                <a href="#framework" class="hover:text-grace-blue transition-colors">Our framework</a>
+                <a href="#identity" class="hover:text-grace-blue transition-colors">Your identity</a>
+            </div>
+            <a href="#contact" class="bg-grace-blue text-white px-5 py-2.5 rounded-full text-[11px] font-black uppercase tracking-widest hover:brightness-110 transition-all shadow-lg shadow-blue-500/30">Connect now</a>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <header class="blueprint-hero py-24 px-6 border-b border-slate-200 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="bg-blue-100 text-grace-blue font-black uppercase text-[10px] tracking-[0.3em] px-4 py-1.5 rounded-full mb-8 inline-block">Spiritual triage</span>
+            <h1 class="text-5xl md:text-7xl font-black text-slate-900 mt-4 mb-8 leading-none tracking-tighter italic">
+                Freedom isn't about <br>trying harder. <br>
+                <span class="text-grace-blue underline decoration-slate-200 underline-offset-8">It's about being honest.</span>
+            </h1>
+            <p class="text-lg text-slate-500 leading-relaxed mb-12 max-w-2xl mx-auto font-medium">
+                In a <span class="text-slate-900 font-bold italic">"Church without curtains,"</span> we believe the primary way to break a choke-hold of addiction or shame is through **truth-telling**. These steps are a simple way to bring your hidden pain into the light.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#framework" class="flex items-center gap-2 px-5 py-3 bg-white rounded-2xl border border-slate-200 text-[11px] font-black uppercase tracking-widest text-slate-700 shadow-sm hover:border-grace-blue transition-all"><i class="fa-solid fa-heart text-grace-blue"></i> No judgment</a>
+                <a href="#framework" class="flex items-center gap-2 px-5 py-3 bg-white rounded-2xl border border-slate-200 text-[11px] font-black uppercase tracking-widest text-slate-700 shadow-sm hover:border-grace-blue transition-all"><i class="fa-solid fa-ear-listen text-grace-blue"></i> No fixing</a>
+                <a href="#framework" class="flex items-center gap-2 px-5 py-3 bg-white rounded-2xl border border-slate-200 text-[11px] font-black uppercase tracking-widest text-slate-700 shadow-sm hover:border-grace-blue transition-all"><i class="fa-solid fa-shield-halved text-grace-blue"></i> Absolute safety</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- The online workshop section -->
+    <section id="workshop" class="py-24 px-6 bg-grace-navy text-white overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10 blueprint-hero pointer-events-none"></div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black mb-4 tracking-tighter italic">Breaking the digital choke-hold workshop</h2>
+                <p class="text-blue-300 font-medium max-w-2xl mx-auto">A self-paced online course addressing the six digital addictions through the lens of a church without curtains.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-grace-blue flex items-center justify-center shrink-0 shadow-lg shadow-blue-500/20"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div>
+                            <h4 class="font-black italic uppercase tracking-widest text-sm mb-2">Seven modules of restoration</h4>
+                            <p class="text-xs text-gray-400 leading-relaxed">From identifying digital roots to renouncing the algorithmic trap, this workshop provides a step-by-step path to freedom.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0"><i class="fa-solid fa-mobile-screen text-grace-blue"></i></div>
+                        <div>
+                            <h4 class="font-black italic uppercase tracking-widest text-sm mb-2">The six addictions addressed</h4>
+                            <p class="text-xs text-gray-400 leading-relaxed">Specific guidance for overcoming pornography, social media, online gaming, compulsive shopping, betting, and doomscrolling.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0"><i class="fa-solid fa-shield-halved text-grace-blue"></i></div>
+                        <div>
+                            <h4 class="font-black italic uppercase tracking-widest text-sm mb-2">Safe masculine and feminine paths</h4>
+                            <p class="text-xs text-gray-400 leading-relaxed">Gender-specific materials integrated from the Proven Ministry path for deep heartwork.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10 bg-white/5 border border-white/10 rounded-[3rem] backdrop-blur-sm">
+                    <h3 class="text-xl font-black italic mb-6">Ready to break free?</h3>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest"><i class="fa-solid fa-check text-grace-blue"></i> Identity stabilization</li>
+                        <li class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest"><i class="fa-solid fa-check text-grace-blue"></i> Algorithmic sabotage tactics</li>
+                        <li class="flex items-center gap-3 text-xs font-bold uppercase tracking-widest"><i class="fa-solid fa-check text-grace-blue"></i> Personal rule of life guide</li>
+                    </ul>
+                    <a href="#contact" class="block text-center py-4 bg-white text-grace-navy rounded-2xl font-black uppercase tracking-widest hover:bg-grace-blue hover:text-white transition-all">Enroll in the workshop</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 7 Steps -->
+    <section id="start" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="mb-20 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div class="max-w-xl">
+                <h2 class="text-4xl font-black text-slate-900 mb-4 tracking-tighter italic">The steps to freedom</h2>
+                <p class="text-slate-500 font-medium italic underline decoration-blue-200">Think of these as "spiritual triage"—stabilizing your heart before deep recovery.</p>
+            </div>
+            <div class="text-[11px] font-black uppercase tracking-widest text-blue-500 border-b-2 border-blue-500 pb-2">
+                A roadmap for the soul
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="step-card p-10 bg-slate-50 border border-slate-100 rounded-[2.5rem] shadow-sm flex flex-col">
+                <div class="text-grace-blue font-black text-xs mb-4 uppercase tracking-[0.4em]">Step 01</div>
+                <h3 class="text-xl font-black mb-4 text-slate-900 italic">Past influences</h3>
+                <p class="text-sm text-slate-500 leading-relaxed font-medium">Identifying old beliefs or family patterns acting as a "curtain" over your heart. We name them and move on.</p>
+            </div>
+            <div class="step-card p-10 bg-slate-50 border border-slate-100 rounded-[2.5rem] shadow-sm flex flex-col">
+                <div class="text-grace-blue font-black text-xs mb-4 uppercase tracking-[0.4em]">Step 02</div>
+                <h3 class="text-xl font-black mb-4 text-slate-900 italic">The deception</h3>
+                <p class="text-sm text-slate-500 leading-relaxed font-medium">Choosing truth-telling over hiding behind polished fronts. We admit where we have been hiding.</p>
+            </div>
+            <div class="step-card p-10 bg-slate-50 border border-slate-100 rounded-[2.5rem] shadow-sm flex flex-col">
+                <div class="text-grace-blue font-black text-xs mb-4 uppercase tracking-[0.4em]">Step 03</div>
+                <h3 class="text-xl font-black mb-4 text-slate-900 italic">Forgiveness</h3>
+                <p class="text-sm text-slate-500 leading-relaxed font-medium">Naming the people who have hurt us and releasing the debt that keeps our hearts in prison.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The environment section -->
+    <section id="framework" class="py-24 px-6 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-slate-900 mb-4 tracking-tighter italic">Our environment for freedom</h2>
+                <p class="text-slate-500 font-medium max-w-xl mx-auto">Creating a safe space where the "curtains" can be dropped without fear.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-grace-blue"><i class="fa-solid fa-heart text-xs"></i></div>
+                        <h4 class="text-lg font-black text-slate-900 italic">No judgment</h4>
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed font-medium">We offer a space defined by gentleness and grace rather than condemnation. We believe that real change begins when you feel safe enough to be honest about your failures without fearing how others will react.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-grace-blue"><i class="fa-solid fa-ear-listen text-xs"></i></div>
+                        <h4 class="text-lg font-black text-slate-900 italic">No fixing</h4>
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed font-medium">Our community commits to the practice of truly sitting and listening without trying to provide a quick solution. We recognize that when you share your heart, you primarily need to be heard and known.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-grace-blue"><i class="fa-solid fa-shield-halved text-xs"></i></div>
+                        <h4 class="text-lg font-black text-slate-900 italic">Absolute safety</h4>
+                    </div>
+                    <p class="text-sm text-slate-500 leading-relaxed font-medium">Safety is built on a strict promise of confidentiality and radical transparency. We protect your story as if it were our own, ensuring that what is brought into the light stays within a secure circle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Identity section -->
+    <section id="identity" class="identity-gradient py-32 px-6 text-white overflow-hidden relative">
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-black mb-6 tracking-tighter italic">Replacing the "not enough" narrative</h2>
+                <p class="text-gray-400 font-medium max-w-xl mx-auto">Shame tells you that you are worthless. Truth-telling reminds you of who you are designed to be.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="group p-6 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                    <i class="fa-solid fa-circle-check text-grace-blue mb-3 block text-xl"></i>
+                    <span class="text-sm font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors">I am significant</span>
+                </div>
+                <div class="group p-6 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                    <i class="fa-solid fa-circle-check text-grace-blue mb-3 block text-xl"></i>
+                    <span class="text-sm font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors">I am secure in Him</span>
+                </div>
+                <div class="group p-6 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                    <i class="fa-solid fa-circle-check text-grace-blue mb-3 block text-xl"></i>
+                    <span class="text-sm font-black uppercase tracking-widest group-hover:text-grace-blue transition-colors text-balance">Loved without pretense</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact form -->
+    <footer id="contact" class="py-32 px-6 border-t border-slate-100 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-black text-slate-900 mb-6 tracking-tighter italic">Ready to take the first step?</h2>
+                <p class="text-slate-500 mb-8 text-sm font-medium leading-relaxed">
+                    You don't have to navigate this journey in the dark. Connect with our care team for a private and confidential appointment.
+                </p>
+            </div>
+            
+            <div class="bg-slate-50 p-10 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100">
+                <h3 class="text-xl font-black mb-8 text-slate-900 uppercase tracking-tight italic border-b border-slate-200 pb-4 text-center">Connect with our care team</h3>
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-2">Full name</label>
+                            <input type="text" placeholder="Your name" required>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-2">Email address</label>
+                            <input type="email" placeholder="email@example.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-2">I am interested in</label>
+                        <select required>
+                            <option value="">Select an option</option>
+                            <option value="workshop">The digital choke-hold workshop</option>
+                            <option value="prayer">Restorative prayer appointment</option>
+                            <option value="freedom">Steps to freedom in Christ</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-2">How can we help?</label>
+                        <textarea rows="4" placeholder="Your message... (Optional)"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-5 bg-grace-blue text-white rounded-2xl font-black uppercase tracking-widest shadow-xl shadow-blue-500/20 hover:scale-[1.02] transition-all">Submit request</button>
+                    <p class="text-[9px] text-center text-slate-400 font-bold uppercase tracking-widest mt-6 italic">
+                        <i class="fa-solid fa-lock mr-2 text-grace-blue"></i> All inquiries are strictly confidential.
+                    </p>
+                </form>
+            </div>
+
+            <div class="mt-24 pt-12 border-t border-slate-200 text-center">
+                <p class="text-[11px] text-slate-400 font-bold uppercase tracking-[0.3em]">
+                    Grace Community Church Detroit • A church without curtains
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
